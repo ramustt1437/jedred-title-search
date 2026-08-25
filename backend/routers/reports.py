@@ -26,7 +26,7 @@ def _v(value: str, fallback: str = NA) -> str:
 
 async def _settings() -> dict:
     s = await db.settings.find_one({"id": "app"})
-    return s or {"company_name": "Title Search Services"}
+    return s or {"company_name": "Jed Red Solutions Pvt Ltd"}
 
 
 def _kv(pairs: list) -> str:
@@ -280,7 +280,7 @@ def _pdf_bytes(order: dict, report: dict, settings: dict) -> bytes:
         canvas.restoreState()
 
     story = [
-        Paragraph(settings.get("company_name", "Title Search Services"), styles["Heading3"]),
+        Paragraph(settings.get("company_name", "Jed Red Solutions Pvt Ltd"), styles["Heading3"]),
         Paragraph("TITLE SEARCH SUMMARY REPORT", title),
         Spacer(1, 6),
         Paragraph(f"Order ID: <b>{order.get('order_number', '')}</b> &nbsp;|&nbsp; Client: <b>{order.get('client_name', '')}</b>", body),
@@ -308,7 +308,7 @@ def _docx_bytes(order: dict, report: dict, settings: dict) -> bytes:
     from docx.shared import Pt
 
     d = Document()
-    d.add_paragraph(settings.get("company_name", "Title Search Services"))
+    d.add_paragraph(settings.get("company_name", "Jed Red Solutions Pvt Ltd"))
     d.add_heading("TITLE SEARCH SUMMARY REPORT", level=0)
     meta = d.add_table(rows=0, cols=2)
     meta.style = "Table Grid"

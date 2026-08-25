@@ -22,14 +22,14 @@ async def lifespan(app: FastAPI):
     client.close()
 
 
-app = FastAPI(lifespan=lifespan, title="Title Search Services API")
+app = FastAPI(lifespan=lifespan, title="Jed Red Solutions — Title Search API")
 
 api_router = APIRouter(prefix="/api")
 
 
 @api_router.get("/")
 async def root():
-    return {"message": "Title Search Services API", "status": "ok"}
+    return {"message": "Jed Red Solutions — Title Search API", "status": "ok"}
 
 
 api_router.include_router(auth.router)

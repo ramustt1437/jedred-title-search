@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard, FolderOpen, FilePlus2, Files, Users as UsersIcon,
-  Settings as SettingsIcon, LogOut, Menu, Search, Scale,
+  Settings as SettingsIcon, LogOut, Menu, Search,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -60,12 +60,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         className={`fixed inset-y-0 left-0 z-50 w-[260px] bg-sidebar text-sidebar-foreground border-r border-sidebar-border flex flex-col transition-transform duration-200 lg:translate-x-0 ${open ? "translate-x-0" : "-translate-x-full"}`}
         data-testid="app-sidebar"
       >
-        <Link to="/" className="flex items-center gap-2.5 px-5 h-16 border-b border-sidebar-border" data-testid="sidebar-logo">
-          <span className="grid place-items-center size-8 rounded-md bg-sidebar-primary/15 text-sidebar-primary">
-            <Scale className="size-4" />
+        <Link to="/" className="flex items-center gap-3 px-4 h-16 border-b border-sidebar-border" data-testid="sidebar-logo">
+          <span className="rounded-md bg-white px-2.5 py-2">
+            <img src="/jedred-logo.png" alt="Jed Red Solutions Pvt Ltd" className="h-8 w-auto" />
           </span>
-          <span className="font-heading text-[15px] font-semibold leading-tight">
-            Title Search<br /><span className="text-sidebar-primary text-xs font-medium">Services</span>
+          <span className="font-heading text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-400 leading-snug">
+            Title Search<br />Workspace
           </span>
         </Link>
         <nav className="flex-1 py-4 px-3 space-y-1 overflow-y-auto">
@@ -129,7 +129,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               data-testid="global-search-input"
             />
           </form>
-          <span className="ml-auto hidden md:block text-sm text-muted-foreground font-heading">Title Search Services</span>
+          <span className="ml-auto hidden md:block text-sm text-muted-foreground font-heading">Jed Red Solutions Pvt Ltd</span>
         </header>
         <main className="p-4 md:p-6 lg:p-8 max-w-[1600px]">{children}</main>
       </div>

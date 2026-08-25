@@ -16,7 +16,7 @@ function Protected({ children }: { children: React.ReactNode }) {
   if (isLoading) {
     return (
       <div className="min-h-screen grid place-items-center text-sm text-muted-foreground" data-testid="session-loading">
-        Loading Title Search Services…
+        Loading Jed Red Solutions Pvt Ltd…
       </div>
     );
   }

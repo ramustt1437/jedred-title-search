@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { Scale, ShieldCheck, FileStack, Lock } from "lucide-react";
+import { ShieldCheck, FileStack, Lock } from "lucide-react";
 import { apiPost } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -37,11 +37,13 @@ export default function Login() {
       <div className="relative hidden lg:flex flex-col justify-between bg-[#0F172A] p-12 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_20%_20%,#1E3A8A,transparent_55%)]" />
         <div className="relative">
-          <div className="flex items-center gap-3">
-            <span className="grid place-items-center size-10 rounded-lg bg-sky-400/15 text-sky-400"><Scale className="size-5" /></span>
+          <div className="flex items-center gap-4">
+            <span className="rounded-lg bg-white px-3 py-2">
+              <img src="/jedred-logo.png" alt="Jed Red Solutions Pvt Ltd" className="h-10 w-auto" />
+            </span>
             <div>
-              <p className="font-heading text-lg font-semibold">Title Search Services</p>
-              <p className="text-xs text-slate-400">Order management &amp; summary reporting</p>
+              <p className="font-heading text-lg font-semibold">Jed Red Solutions Pvt Ltd</p>
+              <p className="text-xs text-slate-400">Title search order management &amp; summary reporting</p>
             </div>
           </div>
         </div>

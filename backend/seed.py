@@ -37,10 +37,10 @@ def make_pdf(title: str, lines: list) -> bytes:
 async def main() -> None:
     today = datetime.now(timezone.utc).date()
     await db.settings.update_one({"id": "app"}, {"$set": {
-        "id": "app", "company_name": "Title Search Services",
-        "company_address": "2nd Floor, Commerce House, Bengaluru 560001",
-        "company_contact": "reports@titlesearch.com | +91 80 4000 1234",
-        "report_footer": "This report is a summary of documents supplied to Title Search Services. It is not a legal opinion.",
+        "id": "app", "company_name": "Jed Red Solutions Pvt Ltd",
+        "company_address": "www.jedredsolutions.in",
+        "company_contact": "www.jedredsolutions.in",
+        "report_footer": "This report is a summary of documents supplied to Jed Red Solutions Pvt Ltd. It is not a legal opinion.",
         "document_types": DEFAULT_DOC_TYPES}}, upsert=True)
 
     ids = {}

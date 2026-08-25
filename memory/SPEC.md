@@ -1,4 +1,9 @@
-# Title Search Services — Living Spec
+# Jed Red Solutions Pvt Ltd — Title Search Workspace (Living Spec)
+
+Branding: company name "Jed Red Solutions Pvt Ltd", website www.jedredsolutions.in,
+logo at `frontend/public/jedred-logo.png` (shown in sidebar + login). The name used on exported
+reports comes from the `settings` collection (`company_name`), editable in Settings by an admin —
+never hardcode it in report code.
 
 ## What the app does
 Workspace for managing **Title Search Orders** and producing **Title Search Summary Reports**.
