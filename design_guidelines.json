@@ -1,0 +1,190 @@
+{
+  "theme": "Light Enterprise Legal Tech / High-Contrast Professional SaaS",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "link": "#1E40AF",
+          "error": "#991B1B",
+          "success": "#166534",
+          "warning": "#9A3412"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "link": "#1E40AF",
+          "border": "#E2E8F0",
+          "subtle": "#F1F5F9"
+        }
+      },
+      {
+        "name": "sidebar",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "active_item": "#1E293B",
+          "active_text": "#38BDF8",
+          "border": "#1E293B"
+        }
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#0F172A",
+        "guarantee": "scrim: linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(30,41,59,0.85) 100%)",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#CBD5E1",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#FCA5A5",
+          "success": "#86EFAC"
+        }
+      },
+      {
+        "name": "badge_new",
+        "kind": "solid",
+        "bg": "#EFF6FF",
+        "on_bg": "#1D4ED8",
+        "on_bg_muted": "#1E40AF"
+      },
+      {
+        "name": "badge_in_progress",
+        "kind": "solid",
+        "bg": "#FEF3C7",
+        "on_bg": "#92400E",
+        "on_bg_muted": "#78350F"
+      },
+      {
+        "name": "badge_completed",
+        "kind": "solid",
+        "bg": "#DCFCE7",
+        "on_bg": "#15803D",
+        "on_bg_muted": "#166534"
+      },
+      {
+        "name": "badge_pending_review",
+        "kind": "solid",
+        "bg": "#F3E8FF",
+        "on_bg": "#6B21A8",
+        "on_bg_muted": "#581C87"
+      },
+      {
+        "name": "badge_overdue",
+        "kind": "solid",
+        "bg": "#FEE2E2",
+        "on_bg": "#B91C1C",
+        "on_bg_muted": "#991B1B"
+      }
+    ],
+    "accent": "#0284C7",
+    "on_accent": "#FFFFFF",
+    "brand_secondary": "#0F172A"
+  },
+  "typography": {
+    "font_heading": "'Manrope Variable', -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_sans": "'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_mono": "'IBM Plex Mono', monospace",
+    "scale_px": {
+      "display": 52,
+      "h1": 36,
+      "h2": 28,
+      "h3": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "letter_spacing": {
+      "heading": "-0.025em",
+      "overline": "0.15em"
+    }
+  },
+  "entry_surfaces": {
+    "/": "Professional split login & authentication landing view. Left side: High-contrast title search services brand hero panel with document security highlights. Right side: Clean credentials login form with role switcher.",
+    "/login": "Professional split login surface. Left side: Title Search Services brand showcase with live security specs. Right side: Login form with fast role selector (Admin, Researcher, Reviewer, Client).",
+    "/register": "Clean enterprise portal onboarding. Left side: Legal verification badge panel. Right side: Multi-step user registration form."
+  },
+  "grids": {
+    "mode": "MODE B: High Density Dashboard Grid",
+    "dashboard": "grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6",
+    "workspace_split": "grid grid-cols-1 lg:grid-cols-12 gap-6",
+    "order_details_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+  },
+  "layouts": {
+    "sidebar": "Fixed 260px dark slate sidebar (#0F172A) with company logo, operational navigation items with status badge counts, active indicator highlight, user profile pill, and collapsed tablet view.",
+    "header": "Top bar (#FFFFFF) sticky z-40 with global search bar, active order quick jumper, role indicator tag, notifications popover, and company name 'Title Search Services'.",
+    "content_area": "Max-width fluid container with generous internal padding (p-6 to p-8), page header with breadcrumbs and primary CTA action group."
+  },
+  "motion": {
+    "principles": "Subtle, non-distracting functional micro-interactions. Responsive hover transforms (y: -1px), smooth tab transitions, instant filter response, and explicit loading skeletons.",
+    "duration_ms": 150,
+    "easing": "cubic-bezier(0.16, 1, 0.3, 1)"
+  },
+  "accessibility": {
+    "apca_wcag_standard": "WCAG 2.1 AA compliant (minimum 4.5:1 text contrast for all body and muted copy on page and card surfaces).",
+    "data_testid_rule": "MUST add data-testid to every button, link, search input, filter dropdown, table row, tab trigger, dialog trigger, and form control (e.g., data-testid='create-order-button', data-testid='order-status-filter').",
+    "focus_states": "Visible focus ring (ring-2 ring-sky-600 ring-offset-2)."
+  },
+  "media": {
+    "image_urls": {
+      "property_document_signing": "https://images.unsplash.com/photo-1521791055366-0d553872125f?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "legal_documents_desk": "https://images.pexels.com/photos/8382242/pexels-photo-8382242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "corporate_agent": "https://images.pexels.com/photos/7414903/pexels-photo-7414903.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    }
+  },
+  "component_path": {
+    "app_shell": "/app/frontend/src/App.tsx",
+    "css_entry": "/app/frontend/src/index.css",
+    "ui_components": "/app/frontend/src/components/ui/"
+  },
+  "instructions_to_main_agent": [
+    "1. SYSTEM ROLE & BRAND: Title Search Services - Enterprise Title Search Order Management & Report Automation App. Clean, structured, high-density, professional business application.",
+    "2. CORE PAGES & ROUTES TO IMPLEMENT IN frontend/src/pages/:",
+    "   - Dashboard.tsx (/): Stat cards (Total Orders, New, In Progress, Pending Review, Completed, Overdue), Quick Actions, Recent Orders Table, Orders Due Soon widget, Assigned to Me list, Search & Quick Filter.",
+    "   - OrdersList.tsx (/orders): Dense data table with advanced multi-select, global search, status filters (NEW, IN PROGRESS, DOCUMENTS COLLECTED, REPORT PREPARATION, PENDING REVIEW, APPROVED, COMPLETED, ON HOLD, CANCELLED), assignee filter, pagination, bulk status update, and export controls.",
+    "   - CreateOrder.tsx (/orders/new): Multi-section wizard form (Client Info, Property Details, Search Specs, Document Requirements, Priority & Deadlines, Assignees). Includes pre-fill demo button.",
+    "   - OrderWorkspace.tsx (/orders/:id): Master order view with 8 TABS:",
+    "       a. Tab 1 - Overview: Summary metrics, status timeline stepper, quick action buttons (Generate AI Report, Export ZIP, Change Status).",
+    "       b. Tab 2 - Order Details: Complete property, legal description, APN, county, buyer/seller/lender metadata form with edit mode.",
+    "       c. Tab 3 - Documents: Drag-and-drop file uploader (PDF/DOCX/JPG/PNG/TIFF), raw document list, preview drawer, file metadata, document categorization.",
+    "       d. Tab 4 - Document Information: Structured data extraction form per document (Deed, Mortgage, Lien, Tax Certificate, Easement, Judgment) with large rich-text notes and key entity fields.",
+    "       e. Tab 5 - Search Findings: Chain of title findings, tax status, encumbrances, liens, restrictions, judgment checks list with risk level badges (Low, Medium, High, Critical).",
+    "       f. Tab 6 - Summary Report: AI First Draft generator button (non-hallucinating based strictly on uploaded document findings), interactive section-by-section rich editor, version history comparison, approval signature block, PDF/DOCX export.",
+    "       g. Tab 7 - Activity/History: Complete audit log of document uploads, field edits, status changes, and user comments with timestamps.",
+    "       h. Tab 8 - Access: Order-specific sharing matrix (assign users, change roles: ADMIN, RESEARCHER, REVIEWER, CLIENT).",
+    "   - DocumentTimeline.tsx (Title Chain): Visual chronological title chain flow showing property transfers, deeds, mortgages, and releases across history.",
+    "   - ReportsSummary.tsx (/reports): Aggregated analytics of search report turnaround times, error rates, completed title reports, export logs.",
+    "   - UsersManagement.tsx (/users): User list, role assignments (ADMIN, RESEARCHER, REVIEWER, CLIENT), invitation modal, access controls.",
+    "   - Settings.tsx (/settings): Editable company name 'Title Search Services', document type definitions, search source credentials (Netro Online placeholder config), AI prompt customization, email export templates.",
+    "3. STATE & SEED DATA:",
+    "   - Provide rich initial demo data for orders (at least 8-10 realistic title search orders across diverse property types, status states, counties, and deed types).",
+    "   - Support instant role switching in top navbar (Admin, Researcher, Reviewer, Client) to demonstrate permission gating for UI actions (e.g. Client can only view and download approved reports).",
+    "   - Implement client-side PDF/DOCX export simulation (using clean formatted HTML printable view or docx/pdf generation) and ZIP package export simulation with manifest.",
+    "4. ACCESSIBILITY & STYLING:",
+    "   - Use font family 'Manrope' for headings and 'IBM Plex Sans' for body text.",
+    "   - Ensure all interactive elements carry clear data-testid attributes.",
+    "   - Ensure all modal dialogs, select dropdowns, and date pickers use existing @/components/ui components (base-ui/shadcn)."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "layout": "Avoid centered single-column pages. Use professional sidebar-driven enterprise layouts with clear visual hierarchy, subtle card borders, dense data tables, and distinct status badges.",
+    "microinteractions": "Provide hover feedback, loading spinners on AI report generation, toast notifications (Sonner) on save/upload/export, and clear empty states for lists.",
+    "testing": "All interactive elements MUST include data-testid attributes."
+  }
+}
